@@ -1,0 +1,33 @@
+Screenshot details and briefing
+---------------------
+
+1. Overall layout and Manage menu
+
+This screen is showing the header and footer.
+It is showing the top level menus that are visible to the admin user.
+It is showing the submenu that is available to the admin user to manage the projects and tasks.
+
+2. Create Project screen
+
+This screen is showing how the projects are created.
+Once created, Users can be assigned to the projects.
+The project list could be any simple list that shows the projects in an intuitive manner.
+
+3. Person List
+
+It shows how the person in the organization are shown. 
+
+4. Create Update Person
+
+This screen shows how the person create and edit screen will look like.
+
+5. Add task screen wit datewise navigation
+
+This shows the screen that can be used by a person to add the task and efforts spent on the task.
+
+6. Add Task and effort screen
+
+This screen shows how the task will be added into the system.
+
+
+Note: We will be using bootstrap for this.
