@@ -1,0 +1,16 @@
+{
+  "name": "yatimetracker",
+  "version": "1.0.0",
+  "description": "Just another time tracking application for small organizations to manage employee time tracking needs.",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Rahul Rajat Singh",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "mongoose": "^4.1.9"
+  }
+}
