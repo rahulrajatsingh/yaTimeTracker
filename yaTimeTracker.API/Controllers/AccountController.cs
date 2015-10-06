@@ -16,11 +16,13 @@ using Microsoft.Owin.Security.OAuth;
 using yaTimeTracker.API.Models;
 using yaTimeTracker.API.Providers;
 using yaTimeTracker.API.Results;
+using System.Web.Http.Cors;
 
 namespace yaTimeTracker.API.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class AccountController : ApiController
     {
         private const string LocalLoginProvider = "Local";
