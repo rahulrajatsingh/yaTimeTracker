@@ -37,7 +37,9 @@
         };
 
         var removeUserFromSession = function () {
-            $window.sessionStorage.removeItem("userInfo");
+            $window.sessionStorage.removeItem("userInfo", function(data){
+                $location.path("/login");
+            });
         };
 
         var isAuthenticated = function () {

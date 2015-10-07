@@ -19,7 +19,7 @@
                     templateUrl: "app/register/register.html",
                     controller: "RegisterController"
                 })
-            .otherwise({ redirectTo: "/main" });
+            .otherwise({ redirectTo: "/login" });
         }])
     .config(['$httpProvider', function ($httpProvider) {
         $httpProvider.interceptors.push('AuthenticationInterceptorService');

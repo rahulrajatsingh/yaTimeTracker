@@ -4,7 +4,13 @@
 
     var LoginController = function ($scope, $location, AccountService) {
 
-        $scope.IsAuthenticated = AccountService.IsAuthenticated();
+        $scope.IsAuthenticated = function () {
+            return AccountService.IsAuthenticated();
+        }
+
+        $scope.signout = function () {
+            AccountService.logout();            
+        }
        
     }
 
