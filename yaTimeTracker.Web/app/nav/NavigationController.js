@@ -8,6 +8,14 @@
             return AccountService.IsAuthenticated();
         }
 
+        $scope.GetloggedInUserName = function () {
+            var userModel = AccountService.GetUserInfo();
+            if (userModel) {
+                return userModel.userName;
+            }
+            return '';
+        }
+
         $scope.signout = function () {
             AccountService.logout();            
         }

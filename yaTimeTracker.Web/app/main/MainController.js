@@ -2,7 +2,11 @@
 
 (function () {
 
-    var MainController = function ($scope, ItemService, AccountService, $location) {
+    var MainController = function ($scope, AccountService, $location) {
+
+        if (AccountService.IsAuthenticated() == false) {
+            $location.path("/login");
+        }
 
         $scope.message = "this is home page";
         

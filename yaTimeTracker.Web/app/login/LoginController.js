@@ -19,8 +19,12 @@
 
             AccountService.login($scope.loginModel)
             .success(function (data, status, headers, config) {
-
-                $location.path("\main");
+                if (!data.error) {
+                    $location.path("\main");
+                }
+                else {
+                    $scope.error = data.error_description;
+                }
             })
             .error(function (data, status, headers, config) {
                 $scope.error = "Failed to login";
