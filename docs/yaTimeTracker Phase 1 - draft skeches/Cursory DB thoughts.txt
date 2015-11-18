@@ -1,0 +1,20 @@
+AspNetRoles - Only the Admin role will be present here. Other users will be treated as non admin users.
+AspNetUsers - This will be user for the People screen. 
+AspNetUserRoles - Relationship table to keep track of all admins in the system. Admins should have the possibility to create more admins.
+Projects
+---------------------
+Id
+Name
+
+ProjectPeople
+---------------------
+ProjectId
+PersonId
+
+Tasks
+--------------------
+Id
+Description
+Efforts
+UserId
+ProjectId
