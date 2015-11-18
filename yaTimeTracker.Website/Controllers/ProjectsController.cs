@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace yaTimeTracker.Website.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ProjectsController : Controller
     {
         // GET: Dashboard
