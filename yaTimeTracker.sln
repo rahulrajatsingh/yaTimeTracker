@@ -3,28 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yaTimeTracker.API", "yaTimeTracker.API\yaTimeTracker.API.csproj", "{02EBAD28-8EBB-4A12-AB70-1ED80320E5BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yaTimeTracker.Core", "yaTimeTracker.Core\yaTimeTracker.Core.csproj", "{3837DCCF-834C-47D1-8A1D-03AA7719F7F8}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "yaTimeTracker.Web(1)", "http://localhost:53622", "{060CCED6-9634-43FC-9923-0953AF3A5B51}"
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_53622"
-		Debug.AspNetCompiler.PhysicalPath = "yaTimeTracker.Web\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53622\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_53622"
-		Release.AspNetCompiler.PhysicalPath = "yaTimeTracker.Web\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53622\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "yaTimeTracker.Web\"
-		DefaultWebSiteLanguage = "Visual C#"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yaTimeTracker.Data", "yaTimeTracker.Data\yaTimeTracker.Data.csproj", "{19ABB390-6821-451C-95AC-226A3F76DEB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yaTimeTracker.Service", "yaTimeTracker.Service\yaTimeTracker.Service.csproj", "{B0678B78-B4F1-4700-BAA5-CF5DF1A30BB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yaTimeTracker.Website", "yaTimeTracker.Website\yaTimeTracker.Website.csproj", "{671BBAA7-D911-446D-A056-4B11B0E5659B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{486541FB-5CE4-45C3-A1B7-8492F12A2F14}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Global
@@ -33,14 +24,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{02EBAD28-8EBB-4A12-AB70-1ED80320E5BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{02EBAD28-8EBB-4A12-AB70-1ED80320E5BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{02EBAD28-8EBB-4A12-AB70-1ED80320E5BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{02EBAD28-8EBB-4A12-AB70-1ED80320E5BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{060CCED6-9634-43FC-9923-0953AF3A5B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{060CCED6-9634-43FC-9923-0953AF3A5B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{060CCED6-9634-43FC-9923-0953AF3A5B51}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{060CCED6-9634-43FC-9923-0953AF3A5B51}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3837DCCF-834C-47D1-8A1D-03AA7719F7F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3837DCCF-834C-47D1-8A1D-03AA7719F7F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3837DCCF-834C-47D1-8A1D-03AA7719F7F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3837DCCF-834C-47D1-8A1D-03AA7719F7F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19ABB390-6821-451C-95AC-226A3F76DEB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19ABB390-6821-451C-95AC-226A3F76DEB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19ABB390-6821-451C-95AC-226A3F76DEB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19ABB390-6821-451C-95AC-226A3F76DEB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0678B78-B4F1-4700-BAA5-CF5DF1A30BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0678B78-B4F1-4700-BAA5-CF5DF1A30BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0678B78-B4F1-4700-BAA5-CF5DF1A30BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0678B78-B4F1-4700-BAA5-CF5DF1A30BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{671BBAA7-D911-446D-A056-4B11B0E5659B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{671BBAA7-D911-446D-A056-4B11B0E5659B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{671BBAA7-D911-446D-A056-4B11B0E5659B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{671BBAA7-D911-446D-A056-4B11B0E5659B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
